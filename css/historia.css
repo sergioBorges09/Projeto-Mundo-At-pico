@@ -1,0 +1,292 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.top-bar {
+    background-color: #0C4DA2;
+    height: 40px;
+    width: 100%;
+}
+
+.navbar {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar img {
+    height: 60px;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #0C4DA2;
+}
+
+.login-btn {
+    background: linear-gradient(135deg, #0C4DA2, #09518c);
+    color: #fff;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 10px rgba(12, 77, 162, 0.3);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.login-btn:hover {
+    background: linear-gradient(135deg, #09518c, #073a70);
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(12, 77, 162, 0.5);
+}
+
+.content {
+    padding: 40px;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+}
+
+.image-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.image-container img {
+    max-width: 90%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+.vision-mission-values {
+    padding: 40px;
+    text-align: left;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.vision-mission-values h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.vision-mission-values p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+    color: #555;
+}
+
+.vision-mission-values ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.vision-mission-values ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.footer {
+    background-color: #0C4DA2;
+    color: white;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+    max-width: 250px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.social-icons {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #0C4DA2;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu a {
+        font-size: 16px;
+    }
+
+    .login-btn {
+        width: 100%;
+        padding: 15px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .content h2 {
+        font-size: 24px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .image-container img {
+        max-width: 100%;
+    }
+
+    .vision-mission-values {
+        padding: 20px;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .vision-mission-values ul li {
+        font-size: 16px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+
+    .social-icons a {
+        font-size: 20px;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 15px;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
+    .content h2 {
+        font-size: 20px;
+    }
+
+    .content p {
+        font-size: 14px;
+    }
+
+    .image-container img {
+        max-width: 100%;
+    }
+
+    .vision-mission-values ul li {
+        font-size: 14px;
+    }
+
+    .footer {
+        padding: 30px 10px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .social-icons a {
+        font-size: 18px;
+    }
+}
