@@ -8,9 +8,11 @@
 </head>
 <body>
     <div class="top-bar"></div>
+
     <div class="cadastro-container">
         <h2>Cadastro</h2>
-        <form method="post">
+
+        <form id="cadastroForm">
             <label for="nome">Nome</label>
             <input type="text" name="nome" id="userName" placeholder="Digite seu nome" required>
 
@@ -28,7 +30,11 @@
 
             <button type="submit" class="cadastro-btn">Registrar</button>
         </form>
+
         <a href="./login.html" class="login-link">Já tem uma conta? Faça login</a>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../java-script/cadastro.js" defer></script> 
 </body>
 </html>
