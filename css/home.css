@@ -4,6 +4,134 @@ body {
     background-color: #f4f4f4;
 }
 
+.imagem{
+    width: 1400px;       
+    height: 300px;       
+    border-radius: 15px; 
+    object-fit: cover;   
+    display: block;    
+    margin: 20px auto;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+}
+
+.container{
+    background: #073a70;
+    padding: 30px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    display: flex; 
+    gap: 20px; 
+    justify-content: flex; 
+    width: 90%;
+    max-width: 1100px; 
+    margin: 20px auto;
+}
+
+.container a {
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.container h2 {
+    color: white;
+    margin: 0;
+    font-size: 18px
+}
+
+.container a:hover {
+    transform: scale(1.1); 
+}
+
+.content {
+    padding: 40px;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+}
+
+.specialties {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.specialty {
+    width: 250px;
+    text-align: center;
+}
+
+.specialty h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.image-container {
+    margin-top: 10px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+.frase{
+    background: #073a70;
+    padding: 10px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    display: flex; /* Coloca os elementos lado a lado */
+    gap: 20px; /* Espaço entre os links */
+    justify-content: center; /* Alinha no centro */
+    width: 30%; /* Deixa o container mais largo */
+    max-width: 400px; /* Limita a largura */
+    margin: 10px auto;
+}
+
+.frase a {
+    text-decoration: none; /* tira o sublinhado */
+    padding: 15px 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.frase h2 {
+    color: white;
+    margin: 0;
+    font-size: 18px
+}
+
+.frase a:hover {
+    transform: scale(1.1); /* aumenta o tamanho */
+}
+
 .top-bar {
     background-color: #0C4DA2;
     height: 40px;
@@ -65,7 +193,7 @@ body {
     color: white;
     padding: 40px 20px;
     text-align: left;
-    margin-top: 40px;
+
 }
 
 .footer-content {
