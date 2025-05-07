@@ -49,7 +49,6 @@ body {
     font-weight: bold;
     cursor: pointer;
     transition: all 0.4s ease;
-    box-shadow: 0 4px 10px rgba(12, 77, 162, 0.3);
     text-decoration: none;
     display: inline-block;
 }
@@ -57,95 +56,87 @@ body {
 .login-btn:hover {
     background: linear-gradient(135deg, #09518c, #073a70);
     transform: scale(1.05);
-    box-shadow: 0 6px 14px rgba(12, 77, 162, 0.5);
 }
 
-.container{
-    width: 1100px;
-    height: 100%;
-    margin: auto;
+.container {
+    max-width: 1200px;
+    margin: 60px auto;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: space-around;
-    color: white
+    gap: 40px;
 }
 
-.container .card{
+.card {
     width: 300px;
-    height: auto;
-    padding: 10px 0;
-    text-align: center;
     background: linear-gradient(135deg, #073a70 0%, #0C4DA2 100%);
-    border-radius:  15px;
-    box-shadow: 2px 5px 15px black;
-    transition: transform 0.3s;
+    border-radius: 15px;
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: center;
+    transition: transform 0.3s ease;
 }
 
-.container .card:hover{
-    transform: scale(1.050);
-
+.card:hover {
+    transform: scale(1.05);
 }
 
-.container .card .card-title{
+.card-title {
     padding: 30px 20px;
     border-bottom: 2px solid gray;
 }
 
-.container .card .card-title h2{
+.card-title h2 {
     font-size: 35px;
-    padding-bottom: 15px;
-    color: gray
-}
-
-.container .card .card-title p span{
-    font-size: 40px;
-    padding: 0 5px;
-
-}
-
-.container .card .card-content ul{
-    padding: 10px 30px;
-    padding-bottom: 20px;
-}
-
-.container .card .card-content ul l{
-    list-style: none;
-    padding: 10px 0;
-}
-
-.container .card .card-content ul li i{
-    margin-right: 2opx;
-}
-
-.container .card .card-content button{
-    width: 120px;
-    padding: 10px 20px;
-    background: white;
-    border-radius: 20px;
+    color: white;
     margin-bottom: 10px;
-    outline: none;
+}
+
+.card-title p span {
+    font-size: 30px;
+    margin: 0 5px;
+}
+
+.card-content ul {
+    list-style: none;
+    padding: 20px 30px;
+    text-align: left;
+}
+
+.card-content ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.card-content ul li i {
+    margin-right: 10px;
+}
+
+.card-content button {
+    margin: 20px 0;
+    padding: 10px 20px;
     border: none;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.container .card .card-content button:hover{
+    border-radius: 20px;
     background: white;
-    letter-spacing: 1.0px;
-
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
-.container .card .card-content button a{
+.card-content button:hover {
+    letter-spacing: 1px;
+}
+
+.card-content button a {
     text-decoration: none;
     color: black;
-    font-size: 15px;
+    font-weight: bold;
 }
 
 .footer {
     background-color: #0C4DA2;
     color: white;
     padding: 40px 20px;
-    text-align: left;
 }
 
 .footer-content {
@@ -156,28 +147,16 @@ body {
 }
 
 .footer-section {
-    margin-bottom: 20px;
     max-width: 250px;
 }
 
 .footer-section h3 {
     font-size: 20px;
     margin-bottom: 15px;
-    color: #fff;
 }
 
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-section ul li {
-    margin-bottom: 10px;
-    color: #fff;
-}
-
-.social-icons {
-    margin-bottom: 10px;
+.footer-section p {
+    margin: 5px 0;
 }
 
 .social-icons a {
@@ -206,15 +185,14 @@ body {
         gap: 20px;
     }
 
-    .menu a {
-        font-size: 16px;
-    }
-
     .login-btn {
         width: 100%;
-        padding: 15px;
         margin-top: 20px;
-        text-align: center;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
     }
 
     .footer-content {
@@ -223,12 +201,7 @@ body {
     }
 
     .footer-section {
-        max-width: 100%;
         text-align: center;
-    }
-
-    .social-icons {
-        margin-top: 10px;
     }
 
     .social-icons a {
