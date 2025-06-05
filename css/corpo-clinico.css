@@ -25,7 +25,10 @@ body {
 
 .menu {
     display: flex;
-    gap: 40px;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
 }
 
 .menu a {
@@ -37,26 +40,6 @@ body {
 
 .menu a:hover {
     color: #0C4DA2;
-}
-
-.login-btn {
-    background: linear-gradient(135deg, #0C4DA2, #09518c);
-    color: #fff;
-    border: none;
-    padding: 12px 32px;
-    border-radius: 50px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.4s ease;
-    box-shadow: 0 4px 10px rgba(12, 77, 162, 0.3);
-    text-decoration: none;
-}
-
-.login-btn:hover {
-    background: linear-gradient(135deg, #09518c, #073a70);
-    transform: scale(1.05);
-    box-shadow: 0 6px 14px rgba(12, 77, 162, 0.5);
 }
 
 .content {
@@ -142,25 +125,6 @@ body {
     margin: 5px 0;
 }
 
-.social-icons {
-    display: flex;
-    gap: 15px;
-}
-
-.social-icons a {
-    color: white;
-    font-size: 24px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-}
-
-.social-icons a:hover {
-    background-color: white;
-    color: #0C4DA2;
-    border-radius: 50%;
-    padding: 6px;
-}
-
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
@@ -171,11 +135,6 @@ body {
     .menu {
         flex-direction: column;
         gap: 20px;
-    }
-
-    .login-btn {
-        width: 100%;
-        margin-top: 15px;
     }
 
     .footer-content {
@@ -196,9 +155,5 @@ body {
 @media (max-width: 480px) {
     .menu a {
         font-size: 16px;
-    }
-
-    .social-icons {
-        justify-content: center;
     }
 }

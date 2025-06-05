@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro Profissional - Mundo Atípico</title>
+  <link rel="stylesheet" href="../css/cadastro-profissional.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+  <div class="top-bar"></div>
+
+  <div id="botao-voltar">
+    <a href="../html/profissionais.html" class="btn-voltar">
+      <i class="fas fa-arrow-left"></i> Voltar
+    </a>
+  </div>
+
+  <div class="cadastro-container">
+    <h2>Cadastro do Profissional</h2>
+    <form id="cadastroProfissionalForm" autocomplete="off">
+
+      <fieldset>
+        <legend>Dados Profissionais</legend>
+
+        <label for="nome"><i class="fas fa-user"></i> Nome completo</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="cpf"><i class="fas fa-id-card"></i> CPF</label>
+        <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required />
+
+        <label for="nascimento"><i class="fas fa-calendar-alt"></i> Data de nascimento</label>
+        <input type="date" id="nascimento" name="nascimento" required />
+
+        <label for="formacao"><i class="fas fa-graduation-cap"></i> Área de formação</label>
+        <select id="formacao" name="formacao" required>
+          <option value="">Selecione</option>
+          <option value="Fisioterapeuta">Fisioterapeuta</option>
+          <option value="Nutricionista">Nutricionista</option>
+          <option value="Pediatra">Pediatra</option>
+          <option value="Psicopedagoga">Psicopedagoga</option>
+          <option value="Fonoaudióloga">Fonoaudióloga</option>
+          <option value="Psicologo">Psicólogo</option>
+          <option value="Neurologista">Neurologista</option>
+        </select>
+
+        <label for="especializacoes"><i class="fas fa-user-md"></i> Especialização</label>
+        <select id="especializacoes" name="especializacoes" required>
+          <option value="">Selecione</option>
+          <option>Autismo</option>
+          <option>Síndrome de Down</option>
+          <option>Síndrome de Tourette</option>
+          <option>Osteogênese Imperfeita</option>
+        </select>
+
+        <label for="registro"><i class="fas fa-id-badge"></i> Registro profissional</label>
+        <input type="text" id="registro" name="registro" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Contatos</legend>
+
+        <label for="email"><i class="fas fa-envelope"></i> E-mail</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="telefone"><i class="fas fa-phone"></i> Telefone</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Endereço Profissional</legend>
+
+        <label for="logradouro">Logradouro</label>
+        <input type="text" id="logradouro" name="logradouro" required />
+
+        <label for="numero">Número</label>
+        <input type="text" id="numero" name="numero" required />
+
+        <label for="complemento">Complemento</label>
+        <input type="text" id="complemento" name="complemento" />
+
+        <label for="bairro">Bairro</label>
+        <input type="text" id="bairro" name="bairro" required />
+
+        <label for="cidade">Cidade</label>
+        <input type="text" id="cidade" name="cidade" required />
+
+        <label for="uf">UF</label>
+        <select id="uf" name="uf" required>
+          <option value="">Selecione</option>
+          <option>SP</option>
+          <option>RJ</option>
+          <option>MG</option>
+          <!-- simplificado -->
+        </select>
+
+        <label for="cep">CEP</label>
+        <input type="text" id="cep" name="cep" placeholder="00000-000" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Complementares</legend>
+
+        <label for="diploma">Diploma</label>
+        <input type="file" id="diploma" name="diploma" accept=".pdf,.jpg,.png" required />
+
+        <label for="experiencia">Tempo de experiência (anos)</label>
+        <input type="number" id="experiencia" name="experiencia" min="0" required />
+
+        <label for="tipos_atendimento">Tipos de atendimento</label>
+        <input type="text" id="tipos_atendimento" name="tipos_atendimento" required />
+
+        <label for="foto">Foto profissional</label>
+        <input type="file" id="foto" name="foto" accept="image/*" required />
+
+        <label for="mini_bio">Mini bio</label>
+        <textarea id="mini_bio" name="mini_bio" rows="4" required></textarea>
+      </fieldset>
+
+      <button type="submit" class="cadastro-btn"><i class="fas fa-paper-plane"></i> Cadastrar</button>
+    </form>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div>
+        <p>Contato: (35) 3445-3254 | mundoatipico@atendimento.com.br</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../java-script/cadastro-profissional.js"></script>
+</body>
+</html>

@@ -25,7 +25,10 @@ body {
 
 .menu {
     display: flex;
-    gap: 40px;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    flex: 1; 
 }
 
 .menu a {
