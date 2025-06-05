@@ -1,0 +1,132 @@
+:root {
+  --primary: #0C4DA2;
+  --secondary: #4a90e2;
+  --background: #f9f9f9;
+  --input-bg: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background);
+}
+
+.top-bar {
+  background-color: var(--primary);
+  height: 50px;
+}
+
+.cadastro-container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: var(--input-bg);
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+h2 {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 30px;
+}
+
+form fieldset {
+  border: none;
+  margin-bottom: 25px;
+}
+
+form legend {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--secondary);
+  margin-bottom: 10px;
+  display: block;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 600;
+  color: #333;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: var(--input-bg);
+  transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+.cadastro-btn {
+  margin-top: 20px;
+  width: 100%;
+  padding: 14px;
+  font-size: 1.1rem;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cadastro-btn:hover {
+  background: #08367A;
+}
+
+#botao-voltar {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.btn-voltar {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 600;
+  padding: 8px 16px;
+  border: 2px solid var(--primary);
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.btn-voltar:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.footer {
+  background: var(--primary);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.3rem;
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}

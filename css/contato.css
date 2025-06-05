@@ -1,5 +1,10 @@
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
 }
@@ -25,7 +30,10 @@ body {
 
 .menu {
     display: flex;
-    gap: 40px;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
 }
 
 .menu a {
@@ -39,27 +47,6 @@ body {
     color: #0C4DA2;
 }
 
-.login-btn {
-    background: linear-gradient(135deg, #0C4DA2, #09518c);
-    color: #fff;
-    border: none;
-    padding: 12px 32px;
-    border-radius: 50px;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.4s ease;
-    box-shadow: 0 4px 10px rgba(12, 77, 162, 0.3);
-    text-decoration: none;
-    display: inline-block;
-}
-
-.login-btn:hover {
-    background: linear-gradient(135deg, #09518c, #073a70);
-    transform: scale(1.05);
-    box-shadow: 0 6px 14px rgba(12, 77, 162, 0.5);
-}
-
 .contato-container {
     max-width: 600px;
     margin: 80px auto;
@@ -69,7 +56,6 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
-
 .contato-container h2 {
     font-size: 28px;
     margin-bottom: 30px;
@@ -97,6 +83,12 @@ body {
     width: 100%;
 }
 
+.form-contato input:focus,
+.form-contato textarea:focus {
+    border-color: #0C4DA2;
+    outline: none;
+}
+
 .form-contato button {
     background: linear-gradient(135deg, #0C4DA2, #09518c);
     color: white;
@@ -114,6 +106,7 @@ body {
     transform: scale(1.03);
 }
 
+/* Rodapé */
 .footer {
     background-color: #0C4DA2;
     color: white;
