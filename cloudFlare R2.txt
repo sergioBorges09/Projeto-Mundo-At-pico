@@ -1,0 +1,15 @@
+Seus dados importantes:
+Bucket: uploads-mundoatipico
+
+Access Key ID: 60fb6ec892b2065402a7b5831c3c332f
+
+Secret Access Key: 7d34d622f1... (guarde com segurança)
+
+Endpoint S3:
+https://4b9d317e6f31bc5520a7c4aa9bf5ce37.r2.cloudflarestorage.com, estou usando back end java com spring boot, como ficaria 
+
+<dependency>
+    <groupId>software.amazon.awssdk</groupId>
+    <artifactId>s3</artifactId>
+    <version>2.20.42</version> <!-- Ou a versão mais recente disponível -->
+</dependency>

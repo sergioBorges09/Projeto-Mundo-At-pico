@@ -1,0 +1,182 @@
+ body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.top-bar {
+    background-color: #0C4DA2;
+    height: 40px;
+    width: 100%;
+}
+
+.navbar {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cadastro-container {
+  max-width: 700px;
+  margin: 30px auto;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.cadastro-container h2 {
+  text-align: center;
+  color: #0C4DA2;
+  margin-bottom: 25px;
+}
+
+form fieldset {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+}
+
+form legend {
+  font-weight: bold;
+  padding: 0 10px;
+  color: #4a90e2; /* cor azul */
+}
+
+/* Labels e Inputs */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  margin-top: 15px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+select,
+textarea,
+input[type="file"] {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus,
+input[type="file"]:focus {
+  outline: none;
+  border-color: #4a90e2; /* cor azul */
+}
+
+/* Textarea */
+textarea {
+  resize: vertical;
+}
+
+/* Botão de cadastro */
+.cadastro-btn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  background-color: #4a90e2; /* cor azul */
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.cadastro-btn:hover {
+  background-color: #357ABD; /* tom mais escuro para hover */
+}
+
+/* Botão voltar */
+#botao-voltar {
+  max-width: 700px;
+  margin: 20px auto 0 auto;
+}
+
+.btn-voltar {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: #4a90e2; /* cor azul */
+  font-weight: bold;
+  font-size: 16px;
+  border: 2px solid #4a90e2; /* cor azul */
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-voltar img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.btn-voltar:hover {
+  background-color: #4a90e2; /* cor azul */
+  color: white;
+}
+
+.footer {
+    background-color: #0C4DA2;
+    color: white;
+    padding: 40px 20px;
+    text-align: left;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+    max-width: 250px;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
