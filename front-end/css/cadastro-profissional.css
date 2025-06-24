@@ -81,20 +81,18 @@ select:focus,
 textarea:focus,
 input[type="file"]:focus {
   outline: none;
-  border-color: #4a90e2; /* cor azul */
+  border-color: #4a90e2; 
 }
 
-/* Textarea */
 textarea {
   resize: vertical;
 }
 
-/* Botão de cadastro */
 .cadastro-btn {
   display: block;
   width: 100%;
   padding: 14px;
-  background-color: #4a90e2; /* cor azul */
+  background-color: #4a90e2; 
   border: none;
   border-radius: 8px;
   color: white;
@@ -106,10 +104,9 @@ textarea {
 }
 
 .cadastro-btn:hover {
-  background-color: #357ABD; /* tom mais escuro para hover */
+  background-color: #357ABD; 
 }
 
-/* Botão voltar */
 #botao-voltar {
   max-width: 700px;
   margin: 20px auto 0 auto;
@@ -119,10 +116,10 @@ textarea {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-  color: #4a90e2; /* cor azul */
+  color: #4a90e2; 
   font-weight: bold;
   font-size: 16px;
-  border: 2px solid #4a90e2; /* cor azul */
+  border: 2px solid #4a90e2; 
   padding: 6px 12px;
   border-radius: 6px;
   transition: background-color 0.3s, color 0.3s;
@@ -135,7 +132,7 @@ textarea {
 }
 
 .btn-voltar:hover {
-  background-color: #4a90e2; /* cor azul */
+  background-color: #4a90e2; 
   color: white;
 }
 

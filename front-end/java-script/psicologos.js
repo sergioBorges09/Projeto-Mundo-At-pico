@@ -4,12 +4,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const profissionais = JSON.parse(localStorage.getItem('profissionais')) || [];
 
-  // Filtra somente os psicólogos
   const psicologos = profissionais.filter(p => {
     if (!p.formacao) return false;
     const formacaoLower = p.formacao.toLowerCase();
 
-    // Aceita "psicologia", "psicologo", "psicóloga"
     const temPsicologia = formacaoLower.includes('psicologia') 
                          || formacaoLower.includes('psicologo') 
                          || formacaoLower.includes('psicóloga');

@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('cadastroProfissionalForm');
+
+  console.log(localStorage.getItem('profissionais'));
   
   function arquivoParaBase64(file) {
     return new Promise((resolve, reject) => {
@@ -59,7 +61,6 @@ document.addEventListener('DOMContentLoaded', () => {
       alert('Profissional cadastrado com sucesso!');
       form.reset();
 
-      // Limpa arquivos selecionados
       form.foto.value = '';
       form.diploma.value = '';
 
